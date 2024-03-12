@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" type="text/css" href="/htmlpage.css" />
+
+    <link
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- header section starts -->
+    <header class="header">
+      <section class="flex">
+        <a href="#home" class="logo"
+          ><img src="logo-img/Druk_Sheri_Quartet__6_-removebg-preview.png"
+        /></a>
+
+        <form class="searchForm" role="search">
+          <input class="searchBar" type="search" placeholder="Search" />
+          <button class="searchBtn" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+
+        <nav class="navbar">
+          <a href="home.html">HOME</a>
+          <a href="about.html">ABOUT US</a>
+          <a href="course.html" id="Course">COURSE</a>
+          <a href="trainers.html">TRAINERS</a>
+          <!-- <a href="reviews.html">REVIEWS</a> -->
+          <a href="contact.html">CONTACT US</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="#" id="logIn">Log In</a>
+      </section>
+    </header>
+    <!-- header section ends -->
+
+    <!-- course html page section starts -->
+    <section class="main container">
+      <div class="container">
+        <h1>HTML Introduction.</h1>
+        <p>HTML is the standard markup language for creating Web pages.</p>
+
+        <h2>What is HTML?</h2>
+        <ul>
+          <li>HTML stands Hyper Text Markup Language.</li>
+          <li>HTML is the standard markup language for creating Web pages.</li>
+          <li>HTML describes the structure of a Web page.</li>
+          <li>HTML consists of a series of elements.</li>
+          <li>HTML elements tell the browser how to display the content.</li>
+          <li>
+            HTML elements label pieces of content such as "this is a heading",
+            "this is a paragraph", "this is a link", etc.
+          </li>
+        </ul>
+      </div>
+      <hr />
+
+      <div class="container">
+        <h1 style="margin-top: 44px">A Simple HTML Document.</h1>
+        <h3 style="margin: 20px">Example</h3>
+
+        <!-- DOCTYPE html
+        html
+        head
+        title
+         body  -->
+        <div id="exampleDiv">
+          <p style="color: black; font-size: 44px">
+            &lt;!DOCTYPE html&gt; <br />
+            &lt;html&gt; <br />
+            &lt;head&gt;<br />
+            &lt;title&gt;Page Title&lt;/title&gt;<br />
+            &lt;/head&gt;<br />
+            &lt;body&gt;<br />
+            <br />
+            &lt;h1&gt;My First Heading&lt;/h1&gt;<br />
+            &lt;p&gt;My first paragraph.&lt;/p&gt;<br />
+            <br />
+            &lt;/body&gt;<br />
+            &lt;/html&gt;<br />
+          </p>
+        </div>
+        <button id="buton">Try it Yourself</button>
+      </div>
+
+      <div class="container">
+        <h2>Example Explained</h2>
+        <ul>
+          <li>
+            The &lt;!DOCTYPE html&gt; declaration defines that this document is
+            an HTML5 document
+          </li>
+          <li>The &lt;html&gt; element is the root element of an HTML page.</li>
+          <li>
+            The &lt;head&gt; element contains meta information about the HTML
+            page.
+          </li>
+          <li>
+            The head element specifies a title for the HTML page (which is shown
+            in the browser's title bar or in the page's tab).
+          </li>
+          <li>
+            The body element defines the document's body, and is a container for
+            all the visible contents, such as headings, paragraphs, images,
+            hyperlinks, tables, lists, etc.
+          </li>
+          <li>The h1 element defines a large heading.</li>
+          <li>The p element defines a paragraph.</li>
+          5w
+        </ul>
+      </div>
+      <hr />
+
+      <div class="container">
+        <h1 style="margin: 30px 0 30px">What is an HTML Element?</h1>
+        <p>
+          An HTML element is defined by start tag, some content, and an end tag:
+        </p>
+        <p>tagname - Content goes here...tagname</p>
+        <p>The HTML element is everything from the start tag to the end tag:</p>
+        <br />
+        <h3>h1 My first heading h1</h3>
+        <br />
+        <h3>p- My first paragraph -p</h3>
+        <br />
+        <p>
+          Note: Some HTML elements have no content (like the br element). These
+          elements are called empty elements do not have an end tag!
+        </p>
+      </div>
+      <hr />
+
+      <div class="container">
+        <h1>Web Browsers</h1>
+        <p>
+          The purpose of web browser (Chrome, Edge, Firefox, Safari) is to read
+          HTML documents and display them correctly.
+        </p>
+        <p>
+          A browser does not display the HTML tags, but uses them to determine
+          how to display teh document:
+        </p>
+      </div>
+      <hr />
+      <div class="history">
+        <p>
+          Since the early days of the World Wide Web, there have been many
+          version of HTML:
+        </p>
+        <ul>
+          <li>1989 - Tim Berners-Lee invented www</li>
+          <li>1991 - Tim Berners-Lee invented HTML</li>
+          <li>1993 - Dave Raggett drafted HTML+</li>
+          <li>1995 - HTML Working Group defined HTML 2.0</li>
+          <li>1997 - W3C Recommendation: HTML 3.2</li>
+          <li>1999 - W3C Recommendation: HTML 4.01</li>
+          <li>2000 - W3C Recommendation: XHTML 1.0</li>
+          <li>2008 - WHATWG HTML5 First Public Draft</li>
+          <li>2012 - WHATWG HTML5 Living Standard</li>
+          <li>2014 - W3C Recommendation: HTML5</li>
+          <li>2016 - W3C Candidate Recommendation: HTML 5.1</li>
+          <li>2017 - W3C Recommendation: HTML5.1 2nd Edition</li>
+          <li>2017 - W3C Recommendation: HTML5.2</li>
+        </ul>
+      </div>
+      <hr />
+
+      <h1 style="margin: 30px 0 30px">Video: HTML Introduction</h1>
+      <div class="video">
+        <div class="videoCard">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/it1rTvBcfRg?si=JfosYBgt9Hq8zcIF"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="videoCard">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ok-plXXHlWw?si=WM_3L2pXc5AkvQmV"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- course html page section ends -->
+
+    <!-- footer section starts     -->
+    <footer class="footer">
+      <div style="padding: 20px">
+        <a href="" style="font-size: 30px; font-weight: bold; color: white"
+          >Back to top</a
+        >
+      </div>
+      <section>
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-youtube"></a>
+          <a href="#" class="fab fa-discord"></a>
+        </div>
+        <div class="credit">
+          &copy; copyright @ 2024 by <span>Druk Sheri quartert</span> | all
+          rights reserved!
+        </div>
+      </section>
+    </footer>
+    <!-- footer section ends     -->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

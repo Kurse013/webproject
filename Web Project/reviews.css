@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Creepster&family=Protest+Guerrilla&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sixtyfour&display=swap");
+
+:root {
+  --green: #00e77f;
+  --white: #fff;
+  --light-white: #aaa;
+  --black: #3d3d3d;
+  --light-bg: #4b4b4b;
+  --yellow: yellow;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+}
+
+*::selection {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+#Reviews {
+  color: var(--green);
+}
+
+::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 5rem;
+}
+
+body {
+  background-color: black;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background-color: var(--light-bg);
+  cursor: pointer;
+  color: var(--white);
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  border: 3px solid var(--green);
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+.heading {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.heading span {
+  color: var(--green);
+  text-transform: uppercase;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: black;
+}
+
+.header .flex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .flex .logo {
+  font-size: 2.5rem;
+  color: var(--white);
+  width: 50px;
+}
+
+.header .flex .logo img {
+  width: 77px;
+  position: relative;
+  right: 240px;
+}
+
+.header .flex .navbar a {
+  margin-left: 2rem;
+  color: var(--light-white);
+  font-size: 2rem;
+  position: relative;
+  left: 300px;
+}
+
+.header .flex .navbar a:hover {
+  color: var(--green);
+  font-weight: bolder;
+}
+
+#menu-btn {
+  cursor: pointer;
+  color: var(--white);
+  font-size: 2.5rem;
+  display: none;
+}
+
+.navbar {
+  position: relative;
+  right: 100px;
+}
+
+.searchForm {
+  border-radius: 2px;
+  width: 250px;
+  position: absolute;
+  left: 150px;
+  border-radius: 50px;
+  border: 3px solid var(--light-white);
+  padding: 5px;
+}
+
+.searchBar {
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 3px;
+  position: relative;
+  left: 10px;
+  color: var(--white);
+  padding: 5px;
+  font-size: 20px;
+  cursor: text;
+}
+
+.searchBtn {
+  width: 40px;
+  padding: 5px;
+  border-radius: 50%;
+  position: relative;
+  background-color: rgba(7, 7, 7, 0);
+  left: 40px;
+  cursor: pointer;
+}
+
+.searchBtn i {
+  color: var(--green);
+  font-size: 25px;
+}
+.reviews-slider .slide {
+  border-radius: 0.5rem;
+  background-color: var(--light-bg);
+  padding: 2rem;
+  margin-bottom: 4rem;
+  user-select: none;
+  height: 500px;
+}
+
+.reviews-slider .slide p {
+  line-height: 2;
+  font-size: 1.6rem;
+  color: var(--light-white);
+}
+
+.reviews-slider .slide .user {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.reviews-slider .slide .user img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews-slider .slide .user h3 {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 0.7rem;
+}
+
+.reviews-slider .slide .user .stars i {
+  font-size: 1.5rem;
+  color: var(--yellow);
+}
+
+.footer {
+  background-color: var(--light-bg);
+  text-align: center;
+}
+
+.footer .share a {
+  margin: 0 0.3rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.footer .share a:hover {
+  background-color: var(--green);
+}
+
+.footer .credit {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  padding-top: 2.5rem;
+  border-top: 0.1rem solid var(--light-white);
+  font-size: 2rem;
+  color: var(--light-white);
+}
+
+.footer .credit span {
+  color: var(--green);
+}
+
+@media (max-width: 1591px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home .row .content h3 {
+    font-size: 8rem;
+  }
+  .header .flex .logo img {
+    position: relative;
+    right: 7px;
+  }
+  .navbar {
+    position: relative;
+    right: 290px;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home .row .content h3 {
+    font-size: 8rem;
+  }
+  .header .flex .logo img {
+    position: relative;
+    right: 10px;
+  }
+  .navbar {
+    position: relative;
+    right: 290px;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .flex .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    border-top: 0.1rem solid var(--light-white);
+    border-bottom: 0.1rem solid var(--light-white);
+    background-color: var(--light-bg);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .flex .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .flex .navbar a {
+    display: block;
+    margin: 2rem;
+  }
+
+  .home .row .content h3 {
+    font-size: 6rem;
+  }
+
+  .header .flex .logo img {
+    position: relative;
+    right: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .row .content h3 {
+    font-size: 5rem;
+  }
+
+  .courses .slide {
+    height: 660px;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .reviews-slider .slide {
+    height: 350px;
+  }
+
+  .header .flex .logo img {
+    width: 60px;
+    padding: 0px;
+    position: relative;
+    right: 11px;
+  }
+
+  .header .flex .navbar a {
+    margin-left: 2rem;
+    color: var(--light-white);
+    font-size: 2rem;
+    position: relative;
+    left: 0px;
+  }
+}
